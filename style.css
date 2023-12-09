@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.seccion-cuatro{
+    width: 100%;
+    height: 100vh; 
+    align-items: center;   /**Centrar una caja*/
+    justify-content: center;
+    display: flex;
+    background-image: url(/fonfo.gif);
+    background-size: cover;
+    background-position: center;
+}
+
+.seccion-cuatro > article{
+    height: 80vh;
+    width: 800px;
+    border-radius:40px;
+    align-items: center; /* Centra verticalmente en el eje Y dentro del article */
+    display: flex;
+    padding: 10px;
+}
+
+.caja-calculadora {
+    margin: 1rem;
+    padding: 1rem;
+}
+  
+.caja-calculadora h1,
+.caja-calculadora h2 {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.input_peso{
+    width: 100%;
+    height: 2rem;
+    margin-top:auto;
+    margin-bottom: 1rem;
+    border-radius:30px;
+    text-align: center;
+}
+
+.input_peso::placeholder{
+    text-align: center;
+    line-height: 40px; /* Ajusta la altura según tus necesidades */
+}
+
+.input_peso:focus{
+    outline:none;
+}
+
+.input_peso_button{
+    width: 100%;
+    height: 2rem;
+    margin-top:auto;
+    margin-bottom: 1rem;
+    color: #fff;
+    font-size: 1rem;
+    cursor:pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.item-calculo > li{
+    font-style: italic;
+    font-size: 1rem;
+    color: #fff;
+}
+
+
+.resultado{
+    display: none; /*Para que no se vea*/
+    position: fixed;
+
+    justify-content: center;
+    align-items: center;
+    inset: 0;
+    
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 20;
+}
+
+#resultado-contenido{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}

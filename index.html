@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de Hidratación</title>
+    <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body>
+    <section class="seccion-cuatro" id="seccion-cuatro">
+        <article>
+            <div class="caja-calculadora">
+                <h1>Calculadora del Metabolismo Basal</h1>
+                <h2>Completa todos los Datos</h2>
+                <form id="formulario">
+                    <input type="number" id="input_peso" class="input_peso" name="peso" min="0" required placeholder="Ingrese su Peso">
+                    <button type="submit" class="input_peso_button">Calcular</button>
+                </form>
+            </div>
+
+            <div class="caja-calculadora">
+                <h1>Como se Calcula</h1>
+                <ul class="item-calculo">
+                    <li>De 0kg a 10kg, se calcula 100cc por cada kilo.</li>
+                    <li>Se suman 50cc por cada kilo de peso por arriba de 10kg, hasta 20kg</li>
+                    <li>De 20kg para arriba, se suman 20cc por cada kilo adicional</li>
+                </ul>
+            </div>
+        </article>
+    </section>
+
+    <section class="resultado" id="ventanaModal">
+        <div id="resultado-contenido">
+            <h1>El resultado de su petision es de,</h1>
+            <button type="button" id="cerrar-resultados">Aceptar</button>
+        </div>
+    </section>
+
+    <script src="/index.js"></script>
+</body>
+
+</html>
